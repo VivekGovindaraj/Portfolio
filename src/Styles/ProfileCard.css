@@ -1,0 +1,87 @@
+/* Sidebar container */
+.sidebar-card {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 32px 0 32px 32px;
+  background: #1d1d1e;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+/* Desktop only */
+@media (min-width: 1024px) {
+  .sidebar-card {
+    height: 600px;
+    position: fixed;
+    margin: 20px;
+  }
+}
+
+/* Image wrapper */
+.profile-wrapper {
+  width: 280px;
+  height: 300px;
+  background: url(../assets/VivekprofilePic.jpeg) no-repeat ;
+  padding: 16px;
+  border-radius: 32px 0 32px 32px;
+  object-fit: cover;
+}
+
+
+/* Role text */
+.role-text {
+  color: #9ca3af;
+ 
+}
+
+/* Name */
+.name-text {
+  font-size: 22px;
+  font-weight: bold;
+ 
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 16px;
+  border: 1px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+/* Bottom buttons */
+
+
+.bottom-btn {
+  padding: 12px 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 48px;
+  transition: 0.3s;
+  border: 1px solid  #9ca3af;
+}
+
+.bottom-btn:hover {
+  color: #22c55e;
+
+  border: 1px solid  #22c55e;
+}
+

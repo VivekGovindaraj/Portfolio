@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', system-ui, sans-serif !important;
+}
+
+.txt-green{
+  color:#5bd85f ;
+}
+
+.bg_green{
+  background-color:#5bd85f ;
+}
+
+.card-block-rounded{
+    border-radius: 0px 32px 0px 0px;
+}
+
+.card-block {
+   background: radial-gradient(circle at top left, #212121, #121212);
+}

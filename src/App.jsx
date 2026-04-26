@@ -1,13 +1,19 @@
-import React from 'react'
+import React from 'react';
+import MainLayout from './Layouts/MainLayout';
+import { Routes,Route, Link } from 'react-router-dom';
+import Home from './Pages/Home';
 
 const App = () => {
   return (
 
     <>
-    <div className="bg-black text-white h-secreen flex items-center justify-center">
-      <h1 className="text-4xl fotn-bold">App coming soon</h1>
+      <MainLayout>
 
-    </div>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+        </Routes>
+
+      </MainLayout>
     </>
     
   )
