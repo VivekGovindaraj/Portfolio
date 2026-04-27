@@ -4,7 +4,7 @@ import {FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa'
 
 const ProfileCard = () => {
   return (
-    <div className="sidebar-card flex flex-col justify-between items-center gap-3 mt-5 lg:fixed">
+    <div className="sidebar-card flex flex-col justify-between items-center gap-3 mt-5 ">
 
       {/* TOP */}
       <div style={{ textAlign: "center" }} className="flex flex-col items-center justify-center gap-2">

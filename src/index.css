@@ -10,7 +10,16 @@
 }
 
 body {
-  font-family: 'Poppins', system-ui, sans-serif !important;
+   font-family: 'Poppins', system-ui, sans-serif !important;
+}
+
+.bg-img {
+ background-image: url('./assets/BG_CV.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
 }
 
 .txt-green{
@@ -28,3 +37,4 @@ body {
 .card-block {
    background: radial-gradient(circle at top left, #212121, #121212);
 }
+

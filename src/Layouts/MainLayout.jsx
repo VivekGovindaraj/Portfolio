@@ -4,15 +4,15 @@ import ProfileCard from '../Components/ProfileCard'
 
 const MainLayout = ({children}) => {
   return (
-    <div className="bg-bg text-textMain min-h-screen">
-      <div className='mx-5 flex flex-col lg:flex-row pt-6 gap-5 '>
-        {/* <SideBar/> */}
-        <aside className='w-full lg:w-80 xl:w-80 2xl:w-96 lg:fixed lg:top-6 lg:left-5 p-6'>
+    <div className="bg-bg text-textMain min-h-screen bg-img">
+      <div className='mx-5 flex flex-col md:flex-col lg:flex-row gap-3 items-start'>
+        <SideBar/> 
+        <aside className=' fixed top-11 left-40 w-[360px]'>
             <ProfileCard/>
         </aside>
         
 
-        <main className='flex-1 lg:ml-96 2xl:ml-[30rem] p-6 md:p-12 lg:p-20 overflow-y-auto min-h-screen  lg:h-[calc(100vh-3rem)]'>
+        <main className='lg:ml-[480px] px-6 md:px-10 lg:px-14 py-16 overflow-y-auto min-h-screen '>
             {children}
         </main>
       </div>
@@ -20,5 +20,5 @@ const MainLayout = ({children}) => {
     </div>
   )
 }
-
+  
 export default MainLayout;

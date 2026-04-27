@@ -1,48 +1,53 @@
-import "../Styles/ProfileCard.css";
-import {FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa'
+import {useState} from 'react'
+import { FaHome, FaUser, FaBriefcase, FaTools, FaEnvelope, FaSun, FaMoon, FaBars} from "react-icons/fa";
+import '../Styles/SideBar.css'
 
 
-const Sidebar = () => {
+const SideBar = () => {
+
+  const [darkMode,setDarkMode] = useState(true)
   return (
-    <div className="sidebar-card mt-5">
 
-      {/* TOP */}
-      <div style={{ textAlign: "center" }} className="flex flex-col items-center justify-center gap-3">
-        
-        <div className="profile-wrapper">
-          
+    <>
+     <div className="floating-controls">
+        <div className="circle-btn">
+          <FaBars />
         </div>
 
-        <p className="role-text text-md">FRONTEND DEVELOPER</p>
-        <h1 className="name-text text-xxl">Vivek Govindraj</h1>
-
-        <div className="social-icons flex items-center jusitfy-between gap-3">
-            <div className="social-icons">
-                <a href="https://linkedin.com" target="_blank" className="icon">
-                    <FaLinkedinIn />
-                </a>
-
-                <a href="https://github.com" target="_blank" className="icon">
-                    <FaGithub />
-                </a>
-
-                <a href="https://instagram.com" target="_blank" className="icon">
-                    <FaInstagram />
-                </a>
-
-                </div>
+        <div
+          className="circle-btn"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? <FaSun /> : <FaMoon />}
         </div>
-
       </div>
 
-      {/* BOTTOM */}
-      <div className="bottom-bar flex justify-between gap-3">
-        <div className="bottom-btn p-3 btn">Download CV</div>
-        <div className="bottom-btn">Contact Me</div>
+    
+    <div className="sidebar-nav">
+
+     
+      <div className="nav-icon active">
+        <FaHome />
       </div>
 
+      <div className="nav-icon">
+        <FaUser />
+      </div>
+
+      <div className="nav-icon">
+        <FaBriefcase />
+      </div>
+
+      <div className="nav-icon">
+        <FaTools />
+      </div>
+
+      <div className="nav-icon">
+        <FaEnvelope />
+      </div>
     </div>
+    </>
   );
 };
 
-export default Sidebar;
+export default SideBar;

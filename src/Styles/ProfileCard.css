@@ -1,7 +1,7 @@
 /* Sidebar container */
 .sidebar-card {
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   height: auto;
   border-radius: 32px 0 32px 32px;
   background: #1d1d1e;

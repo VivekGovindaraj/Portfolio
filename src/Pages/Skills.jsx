@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Hero = () => {
+const Skills = () => {
   return (
-    <section className='px-6 md:px-10 lg:px-14 py-12 md:py-20 card-block card-block-rounded'>
+    <section className='px-6 md:px-10 lg:px-14 py-12 md:py-20 card-block  mt-6'>
         <div className='text-lg md:text-2xl lg:text-3xl '>Hello, I’m <span className='txt-green aboutUpdater ms-1'>UI/UX Developer</span></div>
         <div className='mt-4 text-4xl md:text-5xl lg:text-5xl font-normal leading-[1.8] tracking-tight'>
             Associate Software Developer and{" "}
@@ -33,4 +33,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Skills
