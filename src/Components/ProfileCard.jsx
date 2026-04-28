@@ -12,7 +12,7 @@ const ProfileCard = () => {
         <div className="profile-wrapper mt-4"></div>
 
         <p className="role-text text-md mt-3">FRONTEND DEVELOPER</p>
-        <h1 className="name-text text-xxl">Vivek Govindraj</h1>
+        <h1 className="name-text text-3xl md:text-2xl sm:text-xl font-bold">Vivek Govindraj</h1>
 
         <div className="social-icons flex items-center justify-between gap-3">
             <div className="social-icons">
