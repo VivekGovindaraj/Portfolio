@@ -7,13 +7,13 @@
   background: #1d1d1e;
   padding: 24px;
   margin: 0 auto;
+  
 }
 
-/* Desktop only */
 @media (min-width: 1024px) {
   .sidebar-card {
     height: 600px;
-    position: fixed;
+    position: relative;
     margin: 20px;
   }
 }
@@ -25,9 +25,22 @@
   background: url(../assets/profile1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center; /* 👈 FIX */
+  background-position: top center; 
   padding: 16px;
   border-radius: 32px 0 32px 32px;
+}
+
+@media (max-width: 768px) {
+  .profile-wrapper {
+    max-width: 190px; 
+    height:220px;
+  }
+
+  .sidebar-card {
+    position: relative;
+    margin-top:80px
+  }
+  
 }
 
 
@@ -80,4 +93,7 @@
 
   border: 1px solid  #22c55e;
 }
+
+
+
 

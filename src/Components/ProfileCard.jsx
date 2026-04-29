@@ -16,7 +16,7 @@ const ProfileCard = () => {
 
         <div className="social-icons flex items-center justify-between gap-3">
             <div className="social-icons">
-                <a href="www.linkedin.com/in/vivekgovindaraj0701" target="_blank" className="icon">
+                <a href="https://www.linkedin.com/in/vivekgovindaraj0701" target="_blank" className="icon">
                     <FaLinkedinIn />
                 </a>
 
