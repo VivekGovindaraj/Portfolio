@@ -1,0 +1,34 @@
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(34, 197, 94, 0.4);
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.15);
+}
+
+
+.progress-glow {
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.7);
+}
+
+
+
+.ring-glow {
+  filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.7));
+}
+
+/* ICON HOVER */
+.glass-card img {
+  transition:all 0.3s ease;
+}
+
+.glass-card:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(34,197,94,0.6));
+}

@@ -1,34 +1,169 @@
 import React from 'react'
+import '../Styles/Skills.css'
+
+const skills = [
+  { name: "HTML 5", level: 90, icon: "../../src/assets/SkillsIcon/html.png" },
+  { name: "CSS 3", level: 85, icon: "../../src/assets/SkillsIcon/css-3.png" },
+  { name: "Bootstrap 5", level: 85, icon: "../../src/assets/SkillsIcon/bootstrap.png" },
+  { name: "JavaScript", level: 75, icon: "../../src/assets/SkillsIcon/js.png" },
+  { name: "React", level: 60, icon: "../../src/assets/SkillsIcon/React.png" },
+  { name: "Node.js", level: 50, icon: "../../src/assets/SkillsIcon/Node.png" },
+  { name: "Express.js", level: 60, icon: "../../src/assets/SkillsIcon/Express-js.png" },
+  { name: "MongoDB", level: 50, icon: "../../src/assets/SkillsIcon/MongoDB.png" }
+];
+
+const tools = [
+  { name: "Git", level: 85, icon: "../../src/assets/SkillsIcon/git.png" },
+  { name: "Git Lab", level: 75, icon: "../../src/assets/SkillsIcon/github.png" },
+  { name: "Git Hub", level: 75 , icon: "../../src/assets/SkillsIcon/gitlab.png"},
+  { name: "VS Code", level: 90 , icon: "../../src/assets/SkillsIcon/VSCode.png"},
+  { name: "Figma", level: 70, icon: "../../src/assets/SkillsIcon/figma.png" }
+];
+
+
 
 const Skills = () => {
   return (
     <section className='px-6 md:px-10 lg:px-14 py-12 md:py-20 card-block  mt-6'>
-        <div className='text-lg md:text-2xl lg:text-3xl '>Hello, I’m <span className='txt-green aboutUpdater ms-1'>UI/UX Developer</span></div>
-        <div className='mt-4 text-4xl md:text-5xl lg:text-5xl font-normal leading-[1.8] tracking-tight'>
-            Associate Software Developer and{" "}
-            <span className='bg_green text-black px-7 py-3 my-2 rounded-full mx-2 inline-block font-semibold'>
-                UI/UX Developer
-            </span>{" "}
-            Based in Vellore, Tamilnadu, India.
-            </div>
+    
 
-        <p className='mt-14 text-md text-gray-200'>Have worked in a variety of positions, including key developer, solution designer, and data architect. 
-            Strong engineering background combined with closely working with business customers.</p>
+      {/* ================= CORE SKILLS ================= */}
+      <div>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-8">
+          Technical Skills
+        </h2>
 
-        <div className='mt-10 flex flex-col lg:flex-row items-center justify-between'>
-            <div className='flex flex-col md:flex-row gap-4 items-center justify-center'> 
-                <span className='project-count text-6xl'>10</span>
-                <div className='text-md text-gray-300'>Completed<br/> Projects</div>
+        <div className="
+          grid 
+          grid-cols-1 
+          sm:grid-cols-2 
+          lg:grid-cols-2 
+          xl:grid-cols-3 
+          gap-4 sm:gap-6
+        ">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="
+                glass-card 
+                p-4 sm:p-5 md:p-6 
+                rounded-2xl 
+                w-full
+                transition duration-300
+              "
+            >
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base md:text-lg">
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 object-contain"
+                  />
+                  {skill.name}
+                </div>
+
+                <span className="text-xs sm:text-sm text-gray-300 border px-3 py-1 rounded-md">
+                  {skill.level}%
+                </span>
+              </div>
+
+              {/* Progress Bar */}
+              <div className="w-full h-1 sm:h-1 bg-[#2a2a2a] rounded-full overflow-hidden mt-6">
+                <div
+                  className="h-full bg-green-500 rounded-full progress-glow"
+                  style={{ width: `${skill.level}%` }}
+                />
+              </div>
             </div>
-            <div className='flex flex-col md:flex-row gap-4 items-center justify-center'> 
-                <span className='project-count text-6xl'>3</span>
-                <div className='text-md text-gray-300'>Years<br/> of Experience</div>
-            </div>
-           <div className='flex flex-col md:flex-row gap-4 items-center justify-center'> 
-                <span className='project-count text-6xl'>10+</span>
-                <div className='text-md text-gray-300'>Awards <br/> Winning</div>
-            </div>
+          ))}
         </div>
+      </div>
+
+      {/* ================= TOOL STACK ================= */}
+      
+      <div className="mt-12 md:mt-16">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-8">
+        Tool Stack
+      </h2>
+
+      <div
+        className="
+        grid 
+        grid-cols-2 
+        sm:grid-cols-3 
+        md:grid-cols-4 
+        xl:grid-cols-5 
+        gap-6 sm:gap-8
+      "
+      >
+        {tools.map((tool, index) => (
+          <div
+            key={index}
+            className="
+              glass-card 
+              p-5 
+              rounded-2xl 
+              flex flex-col items-center justify-center
+              transition duration-300
+            "
+          >
+            {/* CIRCLE */}
+            <div className="relative w-25 h-25 sm:w-24 sm:h-24 md:w-28 md:h-28">
+              <svg className="w-full h-full transform -rotate-90">
+                {/* Background */}
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="40"
+                  stroke="#2a2a2a"
+                  strokeWidth="4"
+                  fill="none"
+                />
+
+                {/* Progress */}
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="40"
+                  stroke="#22c55e"
+                  strokeWidth="4"
+                  fill="none"
+                  strokeDasharray={251}
+                  strokeDashoffset={
+                    251 - (251 * tool.level) / 100
+                  }
+                  strokeLinecap="round"
+                  className="ring-glow"
+                />
+              </svg>
+
+              {/* ICON INSIDE */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <img
+                  src={tool.icon}
+                  alt={tool.name}
+                  className="
+                    w-10 h-10 
+                    sm:w-10 sm:h-10
+                    md:w-10 md:h-10
+                    object-contain
+                  "
+                />
+                <span className="text-[10px]  text-gray-400 mt-2">
+                  {tool.level}%
+                </span>
+              </div>
+            </div>
+
+            {/* NAME */}
+            <p className="mt-4 text-sm text-gray-300">
+              {tool.name}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+    
     </section> 
   )
 }

@@ -3,10 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  height:60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 16px;
+  padding: 0px 16px;
   background: #111;
   color: white;
   z-index: 1000;
@@ -20,13 +21,12 @@
 
 .nav-center {
   text-align: center;
-  line-height: 1.2;
-  
 }
 
 .nav-center h3 {
   font-size: 14px;
   margin: 0;
+  font-weight: bold;
 }
 
 .nav-center span {
@@ -35,28 +35,56 @@
 }
 
 
-.floating-controls {
-  position: fixed;
-  top: 14%;
-  left: 4.5%;
+.mobile-bottom-nav {
 
+  position: fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:70px;
+  background-color: #111;
+  border-top: 1px solid #222;
+  z-index: 1000;
+  
+}
+
+.bottom-icon {
+  font-size: 20px;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottom-icon.active,
+.bottom-icon:hover {
+  color: #22c55e;
+}
+
+.left-controls {
+  position: fixed;
+  top: 90px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px; 
+  z-index: 1100;
+}
+
+.floating-controls {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
+  left: 10px; 
 }
 
+
 .sidebar-nav {
-  position: fixed;
-  top: 57%;
-  left: 4%;
-  transform: translateY(-50%);
 
   width: 70px;
   padding: 12px;
-
   background: #111;
   border-radius: 40px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,9 +93,12 @@
 }
 
 
+
+
+
 .circle-btn {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
 
   background: #111;
@@ -128,6 +159,18 @@
   left: 0;
 }
 
+@media (min-width: 768px) {
+  .mobile-menu {
+    width: 300px;
+    left: -300px;
+  }
+
+  .mobile-menu.open {
+    left: 0;
+  }
+}
+
+
 
 .menu-header {
   display: flex;
@@ -176,36 +219,13 @@
   color: #22c55e;
 }
 
-
+/* responsive */
 .sidebar-nav,
 .floating-controls {
   display: none;
 }
 
 
-.mobile-bottom-nav {
-
-  position: fixed;
-  left:0;
-  bottom:0;
-  width:100%;
-  height:65px;
-  background-color: #111;
-  border-top: 1px solid #222;
-  z-index: 1000;
-}
-
-.bottom-icon {
-  font-size: 18px;
-  color: #9ca3af;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.bottom-icon.active,
-.bottom-icon:hover {
-  color: #22c55e;
-}
 
 @media (min-width: 768px) {
 
@@ -214,13 +234,7 @@
     display: none;
   }
 
-  
-  .sidebar-nav {
-    display: flex;
-  }
-
-  
-  .floating-controls {
+ .sidebar-nav, .floating-controls {
     display: flex;
   }
 

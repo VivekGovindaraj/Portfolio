@@ -11,8 +11,12 @@
 
 body {
    font-family: 'Poppins', system-ui, sans-serif !important;
+   overflow-x: hidden;
 }
 
+main {
+  padding-bottom: 90px;
+}
 .bg-img {
  background-image: url('./assets/BG_CV.png') !important;
   background-repeat: no-repeat;
@@ -34,7 +38,30 @@ body {
     border-radius: 0px 32px 0px 0px;
 }
 
+@media (max-width:600px){
+ .card-block-rounded{
+    border-radius: 0px;
+}
+
+}
+
 .card-block {
    background: radial-gradient(circle at top left, #212121, #121212);
 }
 
+.textslant{
+  transform: rotate(-2deg) ;
+}
+@media (max-width:550px){
+.textslant{
+  transform: rotate(0deg) ;
+}
+
+.bg_green{
+  background-color:rgba(0, 0, 0, 0.0) ;
+  padding:0px;
+  color:#5bd85f ;
+}
+
+
+}
