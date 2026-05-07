@@ -1,6 +1,8 @@
 import React from 'react'
 import Hero from './Hero.jsx'
 import Skills from './Skills.jsx'
+import Contact from './Contact.jsx'
+
 
 
 
@@ -11,6 +13,8 @@ const Home = () => {
 
         <Hero/>
         <Skills/>
+        <Contact/>
+        
 
     </div>
   )

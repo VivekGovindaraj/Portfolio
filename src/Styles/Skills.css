@@ -20,7 +20,7 @@
 
 
 .ring-glow {
-  filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.7));
+  /* filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.7)); */
 }
 
 /* ICON HOVER */

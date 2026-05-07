@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
 import { FaHome, FaUser, FaBriefcase, FaTools, FaEnvelope, FaSun, FaMoon, FaBars} from "react-icons/fa";
 import '../../Styles/SideBar.css'
+import { useSideBarContext } from '../../Context/SideBarContext';
+
 const OffBar = () => {
-     const [menuOpen, setMenuOpen] = useState(false);
+
+    const{menuOpen,setMenuOpen}= useSideBarContext()
+    
   return (
     <>
     <nav className={`mobile-menu ${menuOpen ? "open" : ""}`} aria-label='Mobile Menu'>

@@ -1,10 +1,15 @@
 import React, {useState} from 'react'
 import { FaHome, FaUser, FaBriefcase, FaTools, FaEnvelope, FaSun, FaMoon, FaBars} from "react-icons/fa";
 import '../../Styles/SideBar.css'
+import { useThemeContext } from '../../Context/ThemeContext';
+import { useSideBarContext } from '../../Context/SideBarContext';
+
+
 const FloatingSideBar = () => {
 
-   const [menuOpen, setMenuOpen] = useState(false);
-     const [darkMode,setDarkMode] = useState(true);
+  const{darkMode,setDarkMode}=useThemeContext();
+  const{menuOpen,setMenuOpen}=useSideBarContext()
+     
   return (
    <>
     <div className='left-controls'>

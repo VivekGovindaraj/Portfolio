@@ -10,19 +10,17 @@ import '../../Styles/SideBar.css'
 
 const SideBar = () => {
 
-
- 
   return (
 
     <>
       {/* Mobile top navbar*/}
-      <TopNavBar/>
+      <TopNavBar />
       { /* floating hamburer on desktop */}
-      <FloatingSideBar/>
+      <FloatingSideBar />
       {/* /off bar mobile puls desktop*/ }
-        <OffBar/>
+        <OffBar />
       {/* mobile nav bar */}
-      <BottomBar/>
+      <BottomBar />
      
     </>
   );
