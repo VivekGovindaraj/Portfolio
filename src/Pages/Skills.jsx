@@ -35,7 +35,7 @@ const Skills = () => {
         <h2 className="text-2xl md:text-3xl font-semibold mb-8">
           Technical Skills
         </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-4 sm:gap-6'>
 
         {
 
@@ -79,7 +79,7 @@ const Skills = () => {
       </h2>
 
 
-      <div className='grid grid-cols-2 sm:grid-col-3 md:grid-cols-4 xl:grid-cols-5 gap-6 sm:gap-8'>
+      <div className='grid grid-cols-2 sm:grid-col-2 md:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-6 sm:gap-8'>
 
         {tools.map((tool,index) => (
 
