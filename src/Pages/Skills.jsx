@@ -1,26 +1,43 @@
 import React from 'react'
 import '../Styles/Skills.css'
+import htmlIcon from "../assets/SkillsIcon/html.png";
+import cssIcon from "../assets/SkillsIcon/css-3.png";
+import bootstrapIcon from "../assets/SkillsIcon/bootstrap.png";
+import jsIcon from "../assets/SkillsIcon/js.png";
+import jqueryIcon from "../assets/SkillsIcon/Jquery.png";
+import reactIcon from "../assets/SkillsIcon/React.png";
+import nodeIcon from "../assets/SkillsIcon/Node.png";
+import expressIcon from "../assets/SkillsIcon/Express-js.png";
+import mongoIcon from "../assets/SkillsIcon/MongoDB.png";
+
+import gitIcon from "../assets/SkillsIcon/git.png";
+import githubIcon from "../assets/SkillsIcon/github.png";
+import gitlabIcon from "../assets/SkillsIcon/gitlab.png";
+import vscodeIcon from "../assets/SkillsIcon/VSCode.png";
+import figmaIcon from "../assets/SkillsIcon/figma.png";
+import chatgptIcon from "../assets/SkillsIcon/chatgpt.png";
+import adobeIcon from "../assets/SkillsIcon/Adobe_Express_logo.png";
 
 const skills = [
-  { name: "HTML 5", level: 90, icon: "../../src/assets/SkillsIcon/html.png" },
-  { name: "CSS 3", level: 85, icon: "../../src/assets/SkillsIcon/css-3.png" },
-  { name: "Bootstrap 5", level: 85, icon: "../../src/assets/SkillsIcon/bootstrap.png" },
-  { name: "JavaScript", level: 75, icon: "../../src/assets/SkillsIcon/js.png" },
-  { name: "JQuery", level: 60, icon: "../../src/assets/SkillsIcon/Jquery.png" },
-  { name: "React", level: 60, icon: "../../src/assets/SkillsIcon/React.png" },
-  { name: "Node.js", level: 50, icon: "../../src/assets/SkillsIcon/Node.png" },
-  { name: "Express.js", level: 60, icon: "../../src/assets/SkillsIcon/Express-js.png" },
-  { name: "MongoDB", level: 50, icon: "../../src/assets/SkillsIcon/MongoDB.png" }
+  { name: "HTML 5", level: 90, icon: htmlIcon },
+  { name: "CSS 3", level: 85, icon: cssIcon },
+  { name: "Bootstrap 5", level: 85, icon: bootstrapIcon },
+  { name: "JavaScript", level: 75, icon: jsIcon },
+  { name: "JQuery", level: 60, icon: jqueryIcon },
+  { name: "React", level: 60, icon: reactIcon },
+  { name: "Node.js", level: 50, icon: nodeIcon },
+  { name: "Express.js", level: 60, icon: expressIcon },
+  { name: "MongoDB", level: 50, icon: mongoIcon }
 ];
 
 const tools = [
-  { name: "Git", level: 85, icon: "../../src/assets/SkillsIcon/git.png" },
-  { name: "Git Lab", level: 75, icon: "../../src/assets/SkillsIcon/github.png" },
-  { name: "Git Hub", level: 75 , icon: "../../src/assets/SkillsIcon/gitlab.png"},
-  { name: "VS Code", level: 90 , icon: "../../src/assets/SkillsIcon/VSCode.png"},
-  { name: "Figma", level: 70, icon: "../../src/assets/SkillsIcon/figma.png" },
-  { name: "ChatGPT", level: 50, icon: "../../src/assets/SkillsIcon/chatgpt.png" },
-  { name: "Adobe Express", level: 50, icon: "../../src/assets/SkillsIcon/Adobe_Express_logo.png" },
+  { name: "Git", level: 85, icon: gitIcon },
+  { name: "Git Lab", level: 75, icon: githubIcon },
+  { name: "Git Hub", level: 75, icon: gitlabIcon },
+  { name: "VS Code", level: 90, icon: vscodeIcon },
+  { name: "Figma", level: 70, icon: figmaIcon },
+  { name: "ChatGPT", level: 50, icon: chatgptIcon },
+  { name: "Adobe Express", level: 50, icon: adobeIcon }
 ];
 
 
