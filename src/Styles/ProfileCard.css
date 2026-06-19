@@ -1,103 +1,82 @@
-/* Sidebar container */
+/* ==========================
+   CARD
+========================== */
 
 .sidebar-card {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
-  border-radius: 32px 0 32px 32px;
   background: #1d1d1e;
+  border-radius: 32px 0 32px 32px;
   padding: 24px;
   position: relative;
 }
 
-@media (max-width: 768px) {
-   .sidebar-card {
-    margin-top: 60px;
-    border-radius: 0px;
-    padding: 28px;
-    
-    
-  }
+/* ==========================
+   CONTENT
+========================== */
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-@media (min-width: 768px) {
-  .sidebar-card {
-    position: relative;
-    margin-top: 60px;
-  }
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
 }
 
-@media (min-width: 768px) and (max-width:1024px) {
-  .sidebar-card {
-   max-width: 440px;
-  }
-}
+/* ==========================
+   IMAGE
+========================== */
 
-/* DESKTOP ONLY */
-@media (min-width: 1024px) {
-  .sidebar-card {
-    position: fixed;
-    top: 40px;
-    left: 170px;
-    height: 600px;
-    margin-top:0px;
-     
-  }
-}
-
-
-/* Image wrapper */
 .profile-wrapper {
   width: 250px;
   height: 300px;
-  background: url(../assets/profile1.jpeg);
+
+  background: url("../assets/profile1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center; 
-  padding: 16px;
+  background-position: top center;
+
   border-radius: 32px 0 32px 32px;
 }
 
+/* ==========================
+   TEXT
+========================== */
 
-@media (max-width: 768px) {
-  .profile-wrapper {
-    width: 180px;
-    height: 220px;
-  }
-}
-
-
-@media (max-width: 1023px) {
-  .profile-wrapper {
-    width: 220px;
-    height: 260px;
-  }
-}
-
-
-/* Role text */
 .role-text {
   color: #9ca3af;
- 
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
+/* ==========================
+   SOCIAL
+========================== */
 
-/* Social icons */
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 12px;
 }
 
 .icon {
   width: 40px;
   height: 40px;
+
   border-radius: 16px;
   border: 1px solid #374151;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: #9ca3af;
   transition: 0.3s;
 }
@@ -107,24 +86,119 @@
   color: #22c55e;
 }
 
-/* Bottom buttons */
+/* ==========================
+   BUTTONS
+========================== */
 
+.bottom-bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
 
 .bottom-btn {
-  padding: 12px 15px;
-  text-align: center;
+  padding: 12px 16px;
+
+  border-radius: 999px;
+  border: 1px solid #9ca3af;
+
   cursor: pointer;
-  border-radius: 48px;
   transition: 0.3s;
-  border: 1px solid  #9ca3af;
+  background: transparent;
 }
 
 .bottom-btn:hover {
   color: #22c55e;
+  border-color: #22c55e;
+}
 
-  border: 1px solid  #22c55e;
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 767px) {
+
+  .sidebar-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 60px;
+    border-radius: 0;
+    padding: 24px 16px;
+  }
+
+  .profile-wrapper {
+    width: 180px;
+    height: 220px;
+  }
+
+  .bottom-bar {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .bottom-btn {
+    width: 100%;
+    white-space: nowrap;
+  }
 }
 
 
 
+@media (min-width: 768px) and (max-width: 1023px) {
 
+  .sidebar-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 60px;
+    padding: 32px;
+    border-radius: 0px;
+  }
+
+  .profile-content {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 32px;
+  }
+
+  .profile-details {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  .profile-wrapper {
+    width: 240px;
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+
+  .sidebar-card {
+    position: fixed;
+    top: 40px;
+    left: 150px;
+
+    width: 360px;
+    min-height: 530px;
+
+    margin-top: 0;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

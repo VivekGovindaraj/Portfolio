@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBar from '../Components/Navbar/SideBar';
 import ProfileCard from '../Components/ProfileCard'
+import TopNavBar from '../Components/Navbar/TopNavBar';
 
 const MainLayout = ({ children }) => {
   return (
@@ -10,7 +11,7 @@ const MainLayout = ({ children }) => {
 
       {/* Mobile & Tablet */}
       <div className="block lg:hidden">
-
+      
         <ProfileCard />
 
         <main>
@@ -30,10 +31,10 @@ const MainLayout = ({ children }) => {
         </aside>
 
         {/* Scroll Area */}
-        <main className=" flex-1 overflow-y-auto ps-32 pe-8 py-10 " >
+        <main className=" flex-1 overflow-y-auto ps-28 pe-8 py-10 " >
           {children}
 
-          <footer className="mt-10 py-5 text-center">
+          <footer className="mt-0  lg:mt-10 py-5 text-center card-block ">
             © 2026 VivekCV
           </footer>
         </main>

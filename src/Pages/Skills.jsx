@@ -44,7 +44,7 @@ const tools = [
 
 const Skills = () => {
   return (
-    <section className='px-6 md:px-10 lg:px-14 py-12 md:py-20 card-block  mt-6'>
+    <section className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
     
 
       {/* CORE SKILLS*/}
@@ -52,7 +52,7 @@ const Skills = () => {
         <h2 className="text-2xl md:text-3xl font-semibold mb-8">
           Technical Skills
         </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-4 sm:gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2  2xl:grid-cols-3 gap-4 sm:gap-3'>
 
         {
 
@@ -96,7 +96,7 @@ const Skills = () => {
       </h2>
 
 
-      <div className='grid grid-cols-2 sm:grid-col-2 md:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-6 sm:gap-8'>
+      <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-6 sm:gap-8'>
 
         {tools.map((tool,index) => (
 

@@ -62,7 +62,7 @@
 
 .left-controls {
   position: fixed;
-  top: 70px;
+  top: 55px;
   left: 50px;
   display: flex;
   flex-direction: column;
@@ -232,7 +232,7 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
   
   .top-navbar, .mobile-bottom-nav {
