@@ -10,7 +10,7 @@ import nodeIcon from "../assets/SkillsIcon/Node.png";
 import expressIcon from "../assets/SkillsIcon/Express-js.png";
 import mongoIcon from "../assets/SkillsIcon/MongoDB.png";
 
-import gitIcon from "../assets/SkillsIcon/git.png";
+import gitIcon from "../assets/SkillsIcon/Git.png";
 import githubIcon from "../assets/SkillsIcon/github.png";
 import gitlabIcon from "../assets/SkillsIcon/gitlab.png";
 import vscodeIcon from "../assets/SkillsIcon/VSCode.png";
