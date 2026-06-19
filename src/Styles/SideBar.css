@@ -62,7 +62,7 @@
 
 .left-controls {
   position: fixed;
-  top: 90px;
+  top: 70px;
   left: 50px;
   display: flex;
   flex-direction: column;
@@ -70,6 +70,11 @@
   z-index: 1100;
 }
 
+@media(max-width:1023px){
+  .left-controls{
+    display:none;
+  }
+} 
 .floating-controls {
   display: flex;
   flex-direction: column;

@@ -37,7 +37,7 @@
 @media (min-width: 1024px) {
   .sidebar-card {
     position: fixed;
-    top: 64px;
+    top: 40px;
     left: 170px;
     height: 600px;
     margin-top:0px;
