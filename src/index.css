@@ -17,6 +17,12 @@ body {
 main {
   padding-bottom: 90px;
 }
+
+@media (max-width:768px) {
+  main {
+  padding-bottom: 50px;
+}
+}
 .bg-img {
  background-image: url('./assets/BG_CV.png') !important;
   background-repeat: no-repeat;

@@ -5,7 +5,7 @@ import { SiMinutemailer } from "react-icons/si";
 import {  FaPhoneAlt, FaEnvelope, FaMapMarkedAlt, FaPaperPlane} from "react-icons/fa";
 const Contact = () => {
   return (
-   <section className='px-6 md:px-10 lg:px-14 py-12 md:py-18 card-block mt-0 lg:mt-6 rounded-b-3xl'>
+   <section className='px-6 md:px-10 lg:px-14 py-12 md:py-18 card-block mt-0 lg:mt-6 rounded-0 lg:rounded-b-3xl'>
        <h2 className="text-2xl md:text-3xl font-semibold mb-8 inline-flex items-center gap-2">
          <SiMinutemailer/>Contact
         </h2>
@@ -29,7 +29,7 @@ const Contact = () => {
             <div>
               <p className="text-sm text-gray-400">Phone</p>
               <h4 className="text-sm md:text-base font-medium mt-1">
-                +91 98765 43210
+                +91 7094025396
               </h4>
             </div>
           </div>
