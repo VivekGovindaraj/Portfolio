@@ -1,6 +1,4 @@
-/* ==========================
-   CARD
-========================== */
+
 
 .sidebar-card {
   width: 100%;
@@ -12,9 +10,7 @@
   position: relative;
 }
 
-/* ==========================
-   CONTENT
-========================== */
+
 
 .profile-content {
   display: flex;
@@ -30,9 +26,7 @@
   margin-top: 20px;
 }
 
-/* ==========================
-   IMAGE
-========================== */
+
 
 .profile-wrapper {
   width: 250px;
@@ -46,9 +40,7 @@
   border-radius: 32px 0 32px 32px;
 }
 
-/* ==========================
-   TEXT
-========================== */
+
 
 .role-text {
   color: #9ca3af;
@@ -56,9 +48,6 @@
   letter-spacing: 1px;
 }
 
-/* ==========================
-   SOCIAL
-========================== */
 
 .social-icons {
   display: flex;
@@ -86,9 +75,7 @@
   color: #22c55e;
 }
 
-/* ==========================
-   BUTTONS
-========================== */
+
 
 .bottom-bar {
   display: flex;
@@ -112,9 +99,7 @@
   border-color: #22c55e;
 }
 
-/* ==========================
-   MOBILE
-========================== */
+
 
 @media (max-width: 767px) {
 
@@ -127,8 +112,8 @@
   }
 
   .profile-wrapper {
-    width: 180px;
-    height: 220px;
+    width: 220px;
+    height: 270px;
   }
 
   .bottom-bar {
