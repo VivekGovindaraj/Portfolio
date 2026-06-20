@@ -124,6 +124,11 @@
   .bottom-btn {
     width: 100%;
     white-space: nowrap;
+    
+  }
+
+  .bottom-bar {
+    padding-bottom: 30px;
   }
 }
 
