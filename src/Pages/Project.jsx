@@ -4,6 +4,7 @@ import '../Styles/Project.css'
 
 import cineprime from '../assets/SkillsIcon/PojectIcon/cinePrimeImage.png'
 import piggame from '../assets/SkillsIcon/PojectIcon/piggame.png'
+import Bankist from '../assets/SkillsIcon/PojectIcon/bankist.png'
 
 const projects = [
   {
@@ -19,6 +20,14 @@ const projects = [
     // tech: "React • Node.js • MongoDB",
     github    : "https://github.com/VivekGovindaraj/Js_Practice/tree/main/js/PIGGAME",
      live: "https://vivekspiggame.netlify.app/",
+
+  },
+  {
+    title: "Bankist",
+    image: Bankist,
+    // tech: "React • Node.js • MongoDB",
+    github    : "https://github.com/VivekGovindaraj/Bankist-App",
+     live: "https://vivekgovindaraj.github.io/Bankist-App/",
 
   }
 ];
