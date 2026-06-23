@@ -32,7 +32,7 @@ const Project = () => {
         </div>
 
         <h2 className="text-2xl md:text-3xl font-semibold mt-6 mb-10">
-          Explore My Portfolio
+          Explore My Projects
         </h2>
 
     <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
