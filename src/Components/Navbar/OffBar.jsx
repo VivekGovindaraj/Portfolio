@@ -23,7 +23,7 @@ const OffBar = () => {
             ✕
         </button>
         </div>
-
+        <div className='flex flex-col justify-between h-full'>
         <div className="menu-items">
         <div className="menu-item" ><FaUser /> About</div>
         <div className="menu-item"><FaTools /> Skills</div>
@@ -32,8 +32,9 @@ const OffBar = () => {
         <div className="menu-item"><FaEnvelope /> Contact</div>
         </div>
 
-        <div className='fixed bottom-0 left-0 right-0 mx-auto w-fit mb-5 lg:pb-5 pb-2'>
+        <div className='bottom-0 left-0 right-0 mx-auto w-fit mb-5 lg:pb-5 pb-2'>
             © 2026 VivekCV
+        </div>
         </div>
     </nav>
     </>
