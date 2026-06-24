@@ -32,7 +32,7 @@ const OffBar = () => {
         <div className="menu-item"><FaEnvelope /> Contact</div>
         </div>
 
-        <div className='bottom-0 left-0 right-0 mx-auto w-fit mb-5 lg:pb-5 pb-2'>
+        <div className='right-0 mx-auto w-fit mb-5 lg:pb-5 pb-2'>
             © 2026 VivekCV
         </div>
         </div>
