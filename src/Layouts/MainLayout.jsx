@@ -31,7 +31,7 @@ const MainLayout = ({ children }) => {
         </aside>
 
         {/* Scroll Area */}
-        <main className=" flex-1 overflow-y-auto ps-28 pe-8 py-10 " >
+        <main   id="main-scroll" className=" flex-1 overflow-y-auto ps-28 pe-8 py-10 " >
           {children}
 
           <footer className="mt-0  lg:mt-10 py-5 text-center card-block ">

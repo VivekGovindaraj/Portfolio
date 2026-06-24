@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
-import { FaHome, FaUser, FaBriefcase, FaTools, FaEnvelope, FaSun, FaMoon, FaBars} from "react-icons/fa";
+import { FaHome, FaUser, FaBriefcase, FaTools, FaEnvelope, FaSun, FaMoon, FaBars, FaSchool} from "react-icons/fa";
 import '../../Styles/SideBar.css'
 import { useThemeContext } from '../../Context/ThemeContext';
 import { useSideBarContext } from '../../Context/SideBarContext';
+import scrollToSection from "../../utils/scrollToSection.js";
 
 
 const FloatingSideBar = () => {
@@ -30,23 +31,27 @@ const FloatingSideBar = () => {
            <nav className="sidebar-nav">
    
            
-             <div className="nav-icon active">
+             <div className="nav-icon active" onClick={() => scrollToSection("home")}>
                <FaHome />
              </div>
-   
-             <div className="nav-icon">
-               <FaUser />
-             </div>
-   
-             <div className="nav-icon">
-               <FaBriefcase />
-             </div>
-   
-             <div className="nav-icon">
+
+            <div className="nav-icon" onClick={() =>{ console.log("skills") 
+              scrollToSection("skills")}}>
                <FaTools />
              </div>
+             
    
-             <div className="nav-icon">
+             <div className="nav-icon" onClick={() => scrollToSection("project")}>
+               <FaBriefcase />
+             </div>
+
+             <div className="nav-icon" onClick={() => scrollToSection("education")}>
+               <FaSchool />
+             </div>
+   
+           
+   
+             <div className="nav-icon" onClick={() => scrollToSection("contact")}>
                <FaEnvelope />
              </div>
            </nav>

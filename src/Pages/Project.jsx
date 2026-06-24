@@ -5,6 +5,7 @@ import '../Styles/Project.css'
 import cineprime from '../assets/SkillsIcon/PojectIcon/cinePrimeImage.png'
 import piggame from '../assets/SkillsIcon/PojectIcon/piggame.png'
 import Bankist from '../assets/SkillsIcon/PojectIcon/bankist.png'
+import MemoryVerse from '../assets/SkillsIcon/PojectIcon/memoryVerse.png'
 
 const projects = [
   {
@@ -29,12 +30,20 @@ const projects = [
     github    : "https://github.com/VivekGovindaraj/Bankist-App",
      live: "https://vivekgovindaraj.github.io/Bankist-App/",
 
+  },
+  {
+    title: "Memory-Verse",
+    image: MemoryVerse,
+    // tech: "React • Node.js • MongoDB",
+    github    : "https://github.com/VivekGovindaraj/Portfolio",
+     live: "https://vivekgovindaraj.github.io/Memory-verse/",
+
   }
 ];
 const Project = () => {
   return (
     <>
-    <section className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
+    <section id='project' className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
         <div className="inline-flex items-center gap-2 border border-white/10 rounded-full px-5 py-2 text-sm text-gray-300 project-pill">
           <FaBriefcase />
           <span>PROJECTS</span>

@@ -38,7 +38,7 @@ const education = [
 const ExperienceEducation = () => {
   return (
     <>
-    <section className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
+    <section id='education' className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
         <div className="resume-pill">
         <FaBriefcase />
         <span>Work Experience & Education</span>

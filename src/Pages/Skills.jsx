@@ -17,6 +17,7 @@ import vscodeIcon from "../assets/SkillsIcon/VSCode.png";
 import figmaIcon from "../assets/SkillsIcon/figma.png";
 import chatgptIcon from "../assets/SkillsIcon/chatgpt.png";
 import adobeIcon from "../assets/SkillsIcon/Adobe_Express_logo.png";
+import postmanIcon from "../assets/SkillsIcon/postman.png"
 
 const skills = [
   { name: "HTML 5", level: 90, icon: htmlIcon },
@@ -35,16 +36,17 @@ const tools = [
   { name: "Git Lab", level: 75, icon: githubIcon },
   { name: "Git Hub", level: 75, icon: gitlabIcon },
   { name: "VS Code", level: 90, icon: vscodeIcon },
-  { name: "Figma", level: 70, icon: figmaIcon },
+  { name: "Figma", level: 20, icon: figmaIcon },
   { name: "ChatGPT", level: 50, icon: chatgptIcon },
-  { name: "Adobe Express", level: 50, icon: adobeIcon }
+  { name: "Adobe Express", level: 50, icon: adobeIcon },
+  { name: "Post Man", level: 40, icon: postmanIcon }
 ];
 
 
 
 const Skills = () => {
   return (
-    <section className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
+    <section id='skills' className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
     
 
       {/* CORE SKILLS*/}

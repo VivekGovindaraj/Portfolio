@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
    font-family: 'Poppins', system-ui, sans-serif !important;
    overflow-x: hidden;
