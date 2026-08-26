@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../src/index.css'
 import '../Styles/Contact.css'
 import { SiMinutemailer } from "react-icons/si";
 import {  FaPhoneAlt, FaEnvelope, FaMapMarkedAlt, FaPaperPlane} from "react-icons/fa";
 const Contact = () => {
+
+  const [sentMessage, setSentMessage] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+  const handleSendMessage = () => {
+
+    setTimeout(() => {
+      setSentMessage(true)
+    }, 500)
+      
+  }
   return (
    <section id='contact' className='px-6 md:px-10 lg:px-14 py-12 md:py-18 card-block mt-0 lg:mt-6 rounded-0 lg:rounded-b-3xl'>
        <h2 className="text-2xl md:text-3xl font-semibold mb-8 inline-flex items-center gap-2">
@@ -86,7 +99,7 @@ const Contact = () => {
           Let’s make your project brilliant!
         </h3>
 
-        <form className="mt-8 flex flex-col gap-5">
+        <form className="mt-8 flex flex-col gap-5" onSubmit={handleSubmit}>
           
           {/* INPUTS */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -100,9 +113,18 @@ const Contact = () => {
           <textarea rows="3"  placeholder="Your Message" className="contact-input resize-none" ></textarea>
 
      
-          <button className="contact-btn inline-flex align-items-center">
+          <button className="contact-btn inline-flex align-items-center" onClick={handleSendMessage}>
             SEND MESSAGE <SiMinutemailer className='mt-1 ms-2 text-xl'/>
           </button>
+
+          {
+            sentMessage && (
+              <div className='mt-1 contact-input'>
+             Contact details sent... I will contact you shortly!!!
+          </div>
+            )
+          }
+          
         </form>
       </div>
     </section> 

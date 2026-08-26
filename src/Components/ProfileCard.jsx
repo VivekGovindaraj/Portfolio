@@ -13,7 +13,7 @@ const ProfileCard = () => {
         {/* Profile Details */}
         <div className="profile-details">
 
-          <p className="role-text">FRONTEND DEVELOPER</p>
+          <p className="role-text">MERN STACK DEVELOPER</p>
 
           <h1 className="name-text text-3xl font-bold">
             Vivek Govindraj

@@ -10,13 +10,7 @@ const experiences = [
     description:
       "Working on React applications, reusable components and UI architecture.",
   },
-  {
-    year: "2022 - 2023",
-    title: "Frontend Developer",
-    company: "Company Name",
-    description:
-      "Built responsive dashboards and enterprise applications.",
-  },
+  
 ];
 
 const education = [

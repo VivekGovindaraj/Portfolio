@@ -20,7 +20,7 @@ useEffect(() => {
     return () => clearInterval(timer)
 }, [])
   return (
-    <section id='home' className='px-6 md:px-10 lg:px-14 py-12 md:py-19 card-block card-block-rounded'>
+    <section id='home' className='px-6 md:px-10 lg:px-14 py-12 md:py-19 card-block '>
         <div className='text-2xl md:text-2xl lg:text-3xl '>Hello, I’m 
             <span className="relative inline-block w-[290px] h-[40px] overflow-hidden align-middle ms-1">
             <AnimatePresence mode="wait">
@@ -59,8 +59,8 @@ useEffect(() => {
 
         <p className='mt-10 lg:mt-14 text-md text-gray-200'>
             Mern Stack Developer with 3+ years of Experience building responsive  and scalable web applications
-            using React.js, Express.js, MongoDB, Javascript and REST API's. Experienced in developing
-            modern forntend interfaces and backend services for banking applications.
+            using React.js, Express.js, MongoDB, Redux, Javascript and REST API's. Experienced in developing
+            modern frontend interfaces and backend services for banking applications.
         </p>
 
         <div className='mt-10 flex  flex-col md:flex-row  items-center justify-around gap-8 md:gap-8'>

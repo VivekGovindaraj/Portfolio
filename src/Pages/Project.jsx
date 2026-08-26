@@ -6,21 +6,41 @@ import cineprime from '../assets/SkillsIcon/PojectIcon/cinePrimeImage.png'
 import piggame from '../assets/SkillsIcon/PojectIcon/piggame.png'
 import Bankist from '../assets/SkillsIcon/PojectIcon/bankist.png'
 import MemoryVerse from '../assets/SkillsIcon/PojectIcon/memoryVerse.png'
+import cineFlix from '../assets/SkillsIcon/PojectIcon/cineFlix.png'
+import AICounter from '../assets/SkillsIcon/PojectIcon/AICounter.png'
+
 
 const projects = [
   {
-    title: "Cine Prime",
-    image: cineprime,
+    title: "CineFlix using React-Redux",
+    image: cineFlix,
     tech: "React • Node.js • MongoDB",
+    github: "https://github.com/VivekGovindaraj/CineFlix",
+    live: "https://vivekgovindaraj.github.io/CineFlix/",
+  },
+  {
+    title: "CinePrime",
+    image: cineprime,
+    tech: "React • Node.js • MongoDB • Redux",
     github: "https://github.com/VivekGovindaraj/Js_Practice/tree/main/practice/CineFliX",
     live: "https://vivekcineprime.netlify.app/",
   },
+   
   {
     title: "PIG Game",
     image: piggame,
     // tech: "React • Node.js • MongoDB",
     github    : "https://github.com/VivekGovindaraj/Js_Practice/tree/main/js/PIGGAME",
      live: "https://vivekspiggame.netlify.app/",
+
+  },
+
+   {
+    title: "AI Counter",
+    image: AICounter,
+    // tech: "React • Node.js • MongoDB",
+    github    : "https://github.com/VivekGovindaraj/AICounter",
+     live: "https://vivekgovindaraj.github.io/AICounter/",
 
   },
   {
@@ -49,7 +69,7 @@ const Project = () => {
           <span>PROJECTS</span>
         </div>
 
-        <h2 className="text-2xl md:text-3xl font-semibold mt-6 mb-10">
+        <h2 className="text-2xl md:text-3xl font-semibold mt-6 mb-6">
           Explore My Projects
         </h2>
 
@@ -117,7 +137,7 @@ const Project = () => {
                 {project.tech}
               </p> */}
 
-              <div className=" flex justify-between items-center">
+              {/* <div className=" flex justify-between items-center">
                 <span className="text-green-500 text-sm">
                   View Project
                 </span>
@@ -135,7 +155,7 @@ const Project = () => {
                 >
                   <FaExternalLinkAlt />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

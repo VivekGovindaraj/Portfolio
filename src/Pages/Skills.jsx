@@ -9,7 +9,7 @@ import reactIcon from "../assets/SkillsIcon/React.png";
 import nodeIcon from "../assets/SkillsIcon/Node.png";
 import expressIcon from "../assets/SkillsIcon/Express-js.png";
 import mongoIcon from "../assets/SkillsIcon/MongoDB.png";
-
+import reduxIcon from "../assets/SkillsIcon/Redux.png"
 import gitIcon from "../assets/SkillsIcon/Git.png";
 import githubIcon from "../assets/SkillsIcon/github.png";
 import gitlabIcon from "../assets/SkillsIcon/gitlab.png";
@@ -28,6 +28,8 @@ const skills = [
   { name: "React", level: 60, icon: reactIcon },
   { name: "Node.js", level: 50, icon: nodeIcon },
   { name: "Express.js", level: 60, icon: expressIcon },
+  { name: "Redux ", level: 60, icon: reduxIcon },
+  { name: "RTX Query", level: 60, icon: reduxIcon },
   { name: "MongoDB", level: 50, icon: mongoIcon }
 ];
 
@@ -39,7 +41,7 @@ const tools = [
   { name: "Figma", level: 20, icon: figmaIcon },
   { name: "ChatGPT", level: 50, icon: chatgptIcon },
   { name: "Adobe Express", level: 50, icon: adobeIcon },
-  { name: "Post Man", level: 40, icon: postmanIcon }
+  { name: "PostMan", level: 50, icon: postmanIcon }
 ];
 
 
