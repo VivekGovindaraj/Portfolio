@@ -7,10 +7,9 @@ const experiences = [
     year: "2023 - Present",
     title: "Associate Software Developer",
     company: "Mphasis Ltd.",
-    description:
-      "Working on React applications, reusable components and UI architecture.",
-  },
-  
+  description:
+  "Developing responsive and scalable web applications using React.js, Node.js, Express.js and MongoDB. Experienced in building reusable UI components, integrating REST APIs, managing application state using Redux Toolkit and RTK Query, and implementing clean and user-friendly web interfaces.",
+  }
 ];
 
 const education = [
@@ -40,9 +39,9 @@ const ExperienceEducation = () => {
 
       {/* EXPERIENCE */}
 
-      <div className="mb-16 md:mb-20 mt-6 ">
+      <div className="mb-4 md:mb-20 mt-6 ">
 
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center gap-3 mb-6">
           <FaBriefcase className="text-green-500 text-xl md:text-2xl" />
 
           <h3 className="text-xl md:text-2xl
@@ -92,7 +91,7 @@ const ExperienceEducation = () => {
 
       <div>
 
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center gap-3 mb-6">
           <FaGraduationCap className="text-green-500 text-xl md:text-2xl" />
 
           <h3 className="text-xl md:text-2xl font-semibold" >

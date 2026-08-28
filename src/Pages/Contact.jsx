@@ -94,12 +94,20 @@ const Contact = () => {
       </div>
 
       {/* FORM */}
-      <div className="mt-14">
+      <div className="mt-10">
         <h3 className="text-2xl md:text-4xl font-semibold">
           Let’s make your project brilliant!
         </h3>
 
-        <form className="mt-8 flex flex-col gap-5" onSubmit={handleSubmit}>
+        {
+            sentMessage && (
+              <div className='mt-4 contact-input'>
+             Contact details sent... I will contact you shortly!!!
+          </div>
+            )
+        }
+
+        <form className="mt-4 flex flex-col gap-5" onSubmit={handleSubmit}>
           
           {/* INPUTS */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -117,13 +125,7 @@ const Contact = () => {
             SEND MESSAGE <SiMinutemailer className='mt-1 ms-2 text-xl'/>
           </button>
 
-          {
-            sentMessage && (
-              <div className='mt-1 contact-input'>
-             Contact details sent... I will contact you shortly!!!
-          </div>
-            )
-          }
+
           
         </form>
       </div>

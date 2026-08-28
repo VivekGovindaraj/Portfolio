@@ -23,6 +23,7 @@ const skills = [
   { name: "HTML 5", level: 90, icon: htmlIcon },
   { name: "CSS 3", level: 85, icon: cssIcon },
   { name: "Bootstrap 5", level: 85, icon: bootstrapIcon },
+  { name: "Tailwind CSS", level: 60, icon: bootstrapIcon },
   { name: "JavaScript", level: 75, icon: jsIcon },
   { name: "JQuery", level: 60, icon: jqueryIcon },
   { name: "React", level: 60, icon: reactIcon },
