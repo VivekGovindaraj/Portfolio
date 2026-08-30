@@ -3,14 +3,22 @@ import { FaHome, FaUser, FaBriefcase, FaTools, FaEnvelope, FaSun, FaMoon, FaBars
 import '../../Styles/SideBar.css'
 import { useThemeContext } from '../../Context/ThemeContext';
 import { useSideBarContext } from '../../Context/SideBarContext';
+import navItems from '../../utils/navItem.js';
 import scrollToSection from "../../utils/scrollToSection.js";
 
 
 const FloatingSideBar = () => {
 
   const{darkMode,setDarkMode}=useThemeContext();
-  const{menuOpen,setMenuOpen}=useSideBarContext()
+  const{menuOpen,setMenuOpen}=useSideBarContext();
+
+  const handleNavigation = (id) => {
+    scrollToSection(id)
+  }
      
+  const toggleTheme = () => {
+    setDarkMode( prev => !prev)
+  }
   return (
    <>
     <div className='left-controls'>
@@ -29,13 +37,24 @@ const FloatingSideBar = () => {
            {/* navbar on desktop  */}
    
            <nav className="sidebar-nav">
-   
-           
+               {
+                navItems.map((navItem) => {
+                  const Icon = navItem.icon
+                  
+                   return (
+                    <div key={navItem.id} className="nav-icon" onClick={() => handleNavigation(navItem.id)}>
+                      <Icon/>
+                    </div>
+                    )
+                })
+               }
+
+          {/*            
              <div className="nav-icon active" onClick={() => scrollToSection("home")}>
                <FaHome />
-             </div>
+             </div> */}
 
-            <div className="nav-icon" onClick={() =>{ console.log("skills") 
+            {/* <div className="nav-icon" onClick={() =>{ console.log("skills") 
               scrollToSection("skills")}}>
                <FaTools />
              </div>
@@ -53,7 +72,7 @@ const FloatingSideBar = () => {
    
              <div className="nav-icon" onClick={() => scrollToSection("contact")}>
                <FaEnvelope />
-             </div>
+             </div> */}
            </nav>
    
          </div>

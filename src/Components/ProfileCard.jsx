@@ -1,5 +1,6 @@
 import "../Styles/ProfileCard.css";
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
+import scrollToSection from "../utils/scrollToSection";
 
 const ProfileCard = () => {
   return (
@@ -53,7 +54,7 @@ const ProfileCard = () => {
               Download CV
             </button>
 
-            <button className="bottom-btn">
+            <button className="bottom-btn" onClick={() => scrollToSection("contact")}>
               Contact Me
             </button>
           </div>

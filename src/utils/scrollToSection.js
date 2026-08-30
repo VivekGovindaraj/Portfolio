@@ -1,14 +1,40 @@
-const scrollToSection = (id) => {
-  debugger;
+const scrollToSection = (id, closeMenu) => {
+
   const section = document.getElementById(id);
 
-   console.log(section);
   if (!section) return;
 
-  section.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
+  // Desktop
+  if (window.innerWidth >= 1024) {
+
+    const mainScroll = document.getElementById("main-scroll");
+
+    if (!mainScroll) return;
+
+    const sectionRect = section.getBoundingClientRect();
+    const mainRect = mainScroll.getBoundingClientRect();
+
+    const targetPosition =
+      mainScroll.scrollTop +
+      sectionRect.top -
+      mainRect.top;
+
+    mainScroll.scrollTo({
+      top: targetPosition,
+      behavior: "smooth",
+    });
+
+  } else {
+
+    // Mobile / Tablet
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+  }
+
+  closeMenu?.();
 };
 
 export default scrollToSection;

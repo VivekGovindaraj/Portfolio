@@ -16,11 +16,16 @@ const SideBar = () => {
       {/* Mobile top navbar*/}
       <TopNavBar />
       { /* floating hamburer on desktop */}
+       <div className="hidden lg:block">
       <FloatingSideBar />
+      </div>
       {/* /off bar mobile puls desktop*/ }
         <OffBar />
+      
       {/* mobile nav bar */}
+       <div className="block lg:hidden">
       <BottomBar />
+       </div>
      
     </>
   );

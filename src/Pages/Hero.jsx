@@ -37,7 +37,7 @@ useEffect(() => {
             </span>
         </div>
         <div className='mt-6 text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-normal leading-[1.8] tracking-tight'>
-            Associate Software Developer {" "}
+            Associate Software Developer in Mphasis {" "}
             {/* <span className='bg_green text-black px-7 py-3 my-2 rounded-full inline-flex items-center justify-center font-semibold textslant min-w-[250px] overflow-hidden'>
               
                 <AnimatePresence mode="wait">

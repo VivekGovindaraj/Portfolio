@@ -8,6 +8,9 @@ import { useThemeContext } from '../../Context/ThemeContext';
 const TopNavBar = () => {
       const {menuOpen,setMenuOpen}=useSideBarContext();
         const{darkMode,setDarkMode}=useThemeContext()
+        const toggleTheme = () => {
+    setDarkMode( prev => !prev)
+  }
   return (
     <>
       <nav className='top-navbar' aria-label="Mobile Navigation">
@@ -20,7 +23,7 @@ const TopNavBar = () => {
 
         </div>
 
-        <div className='nav-right' onClick={() =>setDarkMode(!darkMode)}>
+        <div className='nav-right' onClick={toggleTheme}>
           { darkMode ? <FaSun/> : <FaMoon/>}
         </div>
       </nav>

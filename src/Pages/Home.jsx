@@ -11,16 +11,16 @@ import ExperienceEducation from './ExperienceEducation.jsx'
 
 const Home = () => {
   return (
-    <div className="">
-
+    
+      <>
         <Hero/>
         <Skills/>
         <Project/>
         <ExperienceEducation/>
         <Contact/>
         
-
-    </div>
+      </>
+    
   )
 }
 
