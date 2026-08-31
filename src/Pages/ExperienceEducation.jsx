@@ -32,7 +32,7 @@ const ExperienceEducation = () => {
   return (
     <>
     <section id='education' className='px-6 md:px-10 lg:px-14 py-12 md:py-18 mt-0 lg:mt-6 card-block '>
-        <div className="resume-pill">
+        <div className="resume-pill lg:mt-0 mt-8">
         <FaBriefcase />
         <span>Work Experience & Education</span>
       </div>

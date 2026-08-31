@@ -3,13 +3,70 @@ import '../../src/index.css'
 import '../Styles/Contact.css'
 import { SiMinutemailer } from "react-icons/si";
 import {  FaPhoneAlt, FaEnvelope, FaMapMarkedAlt, FaPaperPlane} from "react-icons/fa";
+import emailjs from '@emailjs/browser'
 const Contact = () => {
 
-  const [sentMessage, setSentMessage] = useState(false)
+  const [formData, setFormData] = useState({
+    from_name:"",
+    from_email:"",
+    message:""
+  })
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const [isSending, setIsSending] = useState(false)
+  const [sentMessage, setSentMessage] = useState("")
+  const [errorMessage, setErrorMessage] = useState("")
+
+  const handleChange = (e) => {
+    const {name, value}  =  e.target
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]:value
+    }));
   }
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setIsSending(true)
+    setSentMessage("")
+    setErrorMessage("")
+
+    try{
+      await emailjs.send(       
+         import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formData,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+
+      )
+
+      setSentMessage(
+        "Message sent successfully! I will contact you shortly."
+      );
+
+     
+      setFormData({
+        from_name: "",
+        from_email: "",
+        message: "",
+      });
+
+
+    }catch(error) {
+       console.error("Email sending failed:", error);
+
+      setErrorMessage(
+        "Unable to send the message. Please try again later."
+      );
+    }finally{
+      setIsSending(false);
+    }
+  }
+
   const handleSendMessage = () => {
 
     setTimeout(() => {
@@ -18,8 +75,8 @@ const Contact = () => {
       
   }
   return (
-   <section id='contact' className='px-6 md:px-10 lg:px-14 py-12 md:py-18 card-block mt-0 lg:mt-6 rounded-0 lg:rounded-b-3xl'>
-       <h2 className="text-2xl md:text-3xl font-semibold mb-8 inline-flex items-center gap-2">
+   <section id='contact' className='px-6 md:px-10 lg:px-14 py-12 md:py-18 card-block mt-0 lg:mt-6  rounded-0 lg:rounded-b-3xl'>
+       <h2 className="text-2xl md:text-3xl font-semibold mb-8 inline-flex items-center gap-2 lg:mt-0 mt-8">
          <SiMinutemailer/>Contact
         </h2>
         
@@ -99,30 +156,43 @@ const Contact = () => {
           Let’s make your project brilliant!
         </h3>
 
-        {
-            sentMessage && (
-              <div className='mt-4 contact-input'>
-             Contact details sent... I will contact you shortly!!!
-          </div>
-            )
-        }
+       
 
         <form className="mt-4 flex flex-col gap-5" onSubmit={handleSubmit}>
           
           {/* INPUTS */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <input type="text"  placeholder="Full Name" className="contact-input"
+            <input type="text" name='from_name' value={formData.from_name}
+             placeholder="Full Name" className="contact-input" onChange={handleChange}
             />
 
-            <input type="email" placeholder="Email Address" className="contact-input" />
+            <input type="email" name='from_email' value={formData.from_email} 
+            placeholder="Email Address" className="contact-input" onChange={handleChange} />
           </div>
 
           {/* TEXTAREA */}
-          <textarea rows="3"  placeholder="Your Message" className="contact-input resize-none" ></textarea>
+          <textarea rows="4" name="message" value={formData.message}
+           placeholder="Your Message" className="contact-input resize-none" onChange={handleChange} ></textarea>
 
+           {
+            sentMessage && (
+              <div className='mt-4 contact-input'>
+              {/* Contact details sent... I will contact you shortly!!! */}
+              {sentMessage}
+             </div>
+            )
+          }
+
+          {
+            errorMessage && (
+              <div className='mt-4 contact-input'>
+              {errorMessage}
+             </div>
+            )
+          }
      
-          <button className="contact-btn inline-flex align-items-center" onClick={handleSendMessage}>
-            SEND MESSAGE <SiMinutemailer className='mt-1 ms-2 text-xl'/>
+          <button type='submit' className="contact-btn inline-flex align-items-center" disabled={isSending} >
+          {isSending ? "Sending..." : (<>SEND MESSAGE <SiMinutemailer className='mt-1 ms-2 text-xl'/></>)}  
           </button>
 
 

@@ -2,6 +2,8 @@ import "../Styles/ProfileCard.css";
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import scrollToSection from "../utils/scrollToSection";
 
+import resume from '../assets/resume.pdf'
+
 const ProfileCard = () => {
   return (
     <div className="sidebar-card">
@@ -50,9 +52,9 @@ const ProfileCard = () => {
           </div>
 
           <div className="bottom-bar">
-            <button className="bottom-btn ">
+            <a  href={resume}  download="Vivek_Resume.pdf"  className="bottom-btn" >
               Download CV
-            </button>
+            </a>
 
             <button className="bottom-btn" onClick={() => scrollToSection("contact")}>
               Contact Me

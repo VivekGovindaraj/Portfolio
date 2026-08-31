@@ -57,3 +57,24 @@
   background: #22c55e;
   color: black;
 }
+
+.contact-success {
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  background: rgba(34, 197, 94, 0.08);
+  color: #22c55e;
+}
+
+.contact-error {
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+}
+
+.contact-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

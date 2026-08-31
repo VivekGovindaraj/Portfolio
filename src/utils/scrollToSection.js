@@ -1,8 +1,10 @@
-const scrollToSection = (id, closeMenu) => {
+const scrollToSection = (id, setActiveSection, setMenuOpen) => {
 
   const section = document.getElementById(id);
 
   if (!section) return;
+
+    setActiveSection(id)
 
   // Desktop
   if (window.innerWidth >= 1024) {
@@ -34,7 +36,7 @@ const scrollToSection = (id, closeMenu) => {
 
   }
 
-  closeMenu?.();
+  setMenuOpen?.(false);
 };
 
 export default scrollToSection;

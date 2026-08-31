@@ -1,0 +1,185 @@
+/* =========================================
+   LIGHT MODE
+========================================= */
+
+.light-mode {
+  background: #f5f5f5;
+  color: #171717;
+}
+
+/* Main */
+
+.light-mode .card-block {
+  background: #ffffff;
+}
+
+/* Text */
+
+.light-mode .text-gray-200 {
+  color: #374151 !important;
+}
+
+.light-mode .text-gray-300 {
+  color: #4b5563 !important;
+}
+
+.light-mode .text-gray-400 {
+  color: #6b7280 !important;
+}
+
+/* Profile */
+
+.light-mode .sidebar-card {
+  background: #ffffff;
+  color: #171717;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.light-mode .role-text {
+  color: #6b7280;
+}
+
+.light-mode .icon {
+  color: #6b7280;
+  border-color: #d1d5db;
+}
+
+.light-mode .icon:hover {
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+/* Glass */
+
+.light-mode .glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Projects */
+
+.light-mode .project-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+
+.light-mode .glass-contact-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs */
+
+.light-mode .contact-input {
+  background: #ffffff;
+  color: #171717;
+  border-color: #d1d5db;
+}
+
+.light-mode .contact-input::placeholder {
+  color: #9ca3af;
+}
+
+/* Timeline */
+
+.light-mode .timeline::before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.light-mode .timeline-content {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Resume / Project pills */
+
+.light-mode .resume-pill,
+.light-mode .project-pill {
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #374151;
+}
+
+/* Floating navigation */
+
+.light-mode .sidebar-nav {
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+
+.light-mode .circle-btn {
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .nav-icon {
+  color: #374151;
+}
+
+.light-mode .nav-icon:hover {
+  color: #16a34a;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+/* Mobile navbar */
+
+.light-mode .mobile-bottom-nav {
+  background: rgba(255, 255, 255, 0.95);
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .mobile-bottom-nav .nav-icon {
+  color: #374151;
+}
+
+.light-mode .mobile-bottom-nav .nav-icon:hover {
+  color: #16a34a;
+}
+
+/* Top navbar */
+
+.light-mode .top-navbar {
+  background: rgba(255, 255, 255, 0.95);
+  color: #171717;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Off menu */
+
+.light-mode .mobile-menu {
+  background: #ffffff;
+  color: #171717;
+}
+
+.light-mode .menu-header {
+  border-bottom-color: #e5e7eb;
+}
+
+.light-mode .menu-item {
+  border-bottom-color: #e5e7eb;
+  color: #374151;
+}
+
+.light-mode .close-btn {
+  color: #171717;
+}
+
+/* Contact button */
+
+.light-mode .contact-btn {
+  color: #374151;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.light-mode .contact-btn:hover {
+  background: #22c55e;
+  color: #000;
+}
+
+/* Footer */
+
+.light-mode footer {
+  color: #4b5563;
+}

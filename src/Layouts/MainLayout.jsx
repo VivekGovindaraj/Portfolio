@@ -2,10 +2,13 @@
   import SideBar from '../Components/Navbar/SideBar';
   import ProfileCard from '../Components/ProfileCard'
   import TopNavBar from '../Components/Navbar/TopNavBar';
+  import { useThemeContext } from '../Context/ThemeContext';
 
   const MainLayout = ({ children }) => {
+
+    const {darkMode} = useThemeContext();
     return (
-      <div className="bg-bg text-textMain min-h-screen">
+      <div className={`bg-bg text-textMain min-h-screen ${darkMode ? "bg-bg text-textMain" : "light-mode"}`}>
 
         <SideBar />
 

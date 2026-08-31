@@ -8,9 +8,10 @@ scrollToSection
 
 const OffBar = () => {
 
-    const{menuOpen,setMenuOpen}= useSideBarContext()
+    const{menuOpen,setMenuOpen, activeSection,setActiveSection}= useSideBarContext()
     const handleNavigation =(id) => {
-        scrollToSection(id)
+        scrollToSection(id, setActiveSection, setMenuOpen)
+        
     }
     
   return (
@@ -38,7 +39,7 @@ const OffBar = () => {
 
                    return (
                     
-                    <div key={navItem.id} className="menu-item" onClick={() => handleNavigation(navItem.id)}>
+                    <div key={navItem.id} className={`menu-item ${ activeSection === navItem.id ? "active" : ''}`} onClick={() => handleNavigation(navItem.id)}>
                       <Icon/> {navItem.label}
                     </div>
                     )

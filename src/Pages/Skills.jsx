@@ -53,7 +53,7 @@ const Skills = () => {
     
 
       {/* CORE SKILLS*/}
-      <div>
+      <div className='lg:mt-0 mt-8'>
         <h2 className="text-2xl md:text-3xl font-semibold mb-8">
           Technical Skills
         </h2>

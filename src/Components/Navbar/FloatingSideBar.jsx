@@ -10,10 +10,10 @@ import scrollToSection from "../../utils/scrollToSection.js";
 const FloatingSideBar = () => {
 
   const{darkMode,setDarkMode}=useThemeContext();
-  const{menuOpen,setMenuOpen}=useSideBarContext();
+  const{menuOpen,setMenuOpen, activeSection,setActiveSection}=useSideBarContext();
 
   const handleNavigation = (id) => {
-    scrollToSection(id)
+     scrollToSection(id,setActiveSection)
   }
      
   const toggleTheme = () => {
@@ -28,8 +28,8 @@ const FloatingSideBar = () => {
              </div>
    
              <div
-               className="circle-btn"
-               onClick={() => setDarkMode(!darkMode)}
+               className="circle-btn theme-toggle"
+               onClick={() => setDarkMode((prev) => !prev)}
              >
                {darkMode ? <FaSun /> : <FaMoon />}
              </div>
@@ -42,7 +42,7 @@ const FloatingSideBar = () => {
                   const Icon = navItem.icon
                   
                    return (
-                    <div key={navItem.id} className="nav-icon" onClick={() => handleNavigation(navItem.id)}>
+                    <div key={navItem.id} className={`nav-icon ${ activeSection === navItem.id ? "active" : ""} `} onClick={() => handleNavigation(navItem.id)}>
                       <Icon/>
                     </div>
                     )
