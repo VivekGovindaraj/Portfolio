@@ -21,7 +21,7 @@ useEffect(() => {
 }, [])
   return (
     <section id='home' className='px-6 md:px-10 lg:px-14 py-12 md:py-20 card-block '>
-        <div className='text-2xl md:text-2xl lg:text-3xl '>Hello, I’m 
+        <div className='text-2xl md:text-2xl lg:text-3xl lg:mt-0 mt-8'>Hello, I’m 
             <span className="relative  inline-block w-[290px] h-[40px] overflow-hidden align-middle ms-2 lg:mt-0 mt-3">
             <AnimatePresence mode="wait">
                 <motion.span

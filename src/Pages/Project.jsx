@@ -8,6 +8,8 @@ import Bankist from '../assets/SkillsIcon/PojectIcon/bankist.png'
 import MemoryVerse from '../assets/SkillsIcon/PojectIcon/memoryVerse.png'
 import cineFlix from '../assets/SkillsIcon/PojectIcon/cineFlix.png'
 import AICounter from '../assets/SkillsIcon/PojectIcon/AICounter.png'
+import shopVerse from '../assets/SkillsIcon/PojectIcon/shopVerse.png'
+import brainbank from '../assets/SkillsIcon/PojectIcon/brainbank.png'
 
 
 const projects = [
@@ -17,6 +19,20 @@ const projects = [
     tech: "React • Node.js • MongoDB",
     github: "https://github.com/VivekGovindaraj/CineFlix",
     live: "https://vivekgovindaraj.github.io/CineFlix/",
+  },
+  {
+    title: "ShopVerse - MERN",
+    image: shopVerse,
+    tech: "React • Node.js • Express.js • Redux • MongoDB",
+    github: "https://github.com/VivekGovindaraj/shopVerse",
+    live: "https://frontend-alpha-dusky-77.vercel.app/",
+  },
+  {
+    title: "Brain Bank - MERN",
+    image: brainbank,
+    tech: "React • Node.js • Express.js • Redux • MongoDB",
+    github: "https://github.com/VivekGovindaraj/BrainBank",
+    live: "https://brain-bank-eight.vercel.app/",
   },
   {
     title: "CinePrime",
